@@ -1,8 +1,26 @@
 {{page-title "Myapp"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-{{!-- <WelcomePage /> --}}
-<h1>Welcome Page</h1>
-{{!-- Feel free to remove this! --}}
+<ul>
+  <li>
+    {{#link-to 'index'}}
+      Home
+    {{/link-to}}
+  </li>
+  <li>
+    {{#link-to 'about'}}
+      About
+    {{/link-to}}
+  </li>
+  <li>
+    {{#link-to 'services'}}
+      Services
+    {{/link-to}}
+  </li>
+  <li>
+    {{#link-to 'contact'}}
+      Contact
+    {{/link-to}}
+  </li>
+</ul>
 
 {{outlet}}
