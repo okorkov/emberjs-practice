@@ -1,1 +1,10 @@
+{{page-title "Services"}}
+
 <h3>services</h3>
+<ul>
+  {{#each @model as |service|}}
+    <li>{{service}}</li>
+  {{/each}}
+</ul> 
+
+{{outlet}}
